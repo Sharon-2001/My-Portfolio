@@ -2,7 +2,7 @@
 
 Welcome to my portfolio repository! This is where you can view the code for my personal developer portfolio. It’s a showcase of my skills, projects, and a bit about me. Feel free to explore, and if you have any suggestions or feedback, please let me know!
 
-(C:\Users\ssbai.BAILEY\OneDrive\Desktop\My Portfolio\images\demo)
+(https://github.com/Sharon-2001/My-Portfolio/blob/main/images/demo.png?raw=true)
 
 The whole website is made using ChatGpt. Not a single code is mine.I feel proud about that!!
 
