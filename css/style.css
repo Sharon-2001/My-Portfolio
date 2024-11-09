@@ -1,0 +1,228 @@
+/* Resetting margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    color: #ff6600;
+}
+
+#home {
+    position: relative;
+    background-image: url('../images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333; 
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+}
+
+#home .content {
+    position: relative; 
+    z-index: 2; 
+}
+
+#home .content h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for h1 */
+}
+
+.about {
+    text-align: center; /* Center align text and image within the section */
+    font-size: 18px; /* Set a base font size for the whole section */
+    position: relative;
+    margin-top: 50px; /* Add some space above the section */
+    background-image: url('../images/background-image.jpg'); /* Path to the background image */
+    background-size: cover; /* Make the background cover the entire section */
+    background-position: center; /* Center the background */
+    height: 100vh; 
+    color: #333; 
+    padding: 100px; /* Adjust padding to create space for the image and background */
+}
+
+.about img {
+    position: relative;
+    text-align: center; /* Center align text and image within the section */
+    z-index: 2; /* Make sure the image appears above the background */
+    width: 100%; /* Make the image responsive */
+    max-width: 900px; /* Adjust this based on your design */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.intro span {
+    color: #ff6600;
+}
+
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+
+.projects .project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+.projects .project-item img {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set a maximum width for the image */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #333;
+    background: #ff6600;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.project-item a:hover {
+    background: #e65c00;
+}
+
+#skills {
+    background-image: url('../images/skills-background.jpg'); /* Path to the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    height: 70vh;
+    padding: 60px 0; /* Add padding to create space inside the section */
+    color: #333; /* Adjust text color if needed for contrast */
+}
+
+.skills ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn {
+    background-color: #e65c00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
